@@ -147,9 +147,11 @@ end
 
 def play(board)
   until over?(board)==true
-      turn(board)
     if draw?(board)==true || won?(board)!=nil
       return over?(board)==true
+      play(board)
+    else
+      turn(board)
   end
 end
 if winner(board)==nil
