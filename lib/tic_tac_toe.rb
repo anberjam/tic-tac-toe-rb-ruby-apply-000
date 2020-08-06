@@ -148,8 +148,13 @@ end
 def play(board)
   until over?(board)==true
       turn(board)
-    if draw(board)==
+    if draw(board)==true
+      return over?(board)==true
+    if won?(board)!=nil
+    end
+      return over?(board)==true
   end
+end
   if won?(board)!=nil && over(board)
     puts "Congratulations ${winner(board)}!"
   end
