@@ -154,7 +154,7 @@ def play(board)
       return over?(board)==true
   end
 end
-  if turn_count.even?==true
+  if turn_count.even?==true && 
     puts 
   end
 end
