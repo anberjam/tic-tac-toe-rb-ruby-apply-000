@@ -147,6 +147,7 @@ end
 
 def play(board)
   until over?(board)==true
+   turn(board)
     if draw?(board)==true
       return over?(board)==true
       play(board)
@@ -160,7 +161,6 @@ def play(board)
       play(board)
     end
       turn(board)
-      won?(board)
   end
 if winner(board)==nil
   puts "Cat's Game!"
