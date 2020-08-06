@@ -151,9 +151,9 @@ def play(board)
       return over?(board)==true
     end
       if winner(board)!=nil
-        
+        return over?(board)==true
       end
-      won?(board)!=nil
+      if won?(board)!=nil
       return over?(board)==true
     end
       play(board)
