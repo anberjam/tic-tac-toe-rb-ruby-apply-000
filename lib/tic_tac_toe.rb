@@ -161,7 +161,6 @@ def play(board)
     end
       turn(board)
   end
-end
 if winner(board)==nil
   puts "Cat's Game!"
   elsif winner(board)=="X"
