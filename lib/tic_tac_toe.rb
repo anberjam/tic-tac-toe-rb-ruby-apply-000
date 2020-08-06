@@ -160,6 +160,7 @@ def play(board)
       play(board)
     end
       turn(board)
+      won?(board)
   end
 if winner(board)==nil
   puts "Cat's Game!"
