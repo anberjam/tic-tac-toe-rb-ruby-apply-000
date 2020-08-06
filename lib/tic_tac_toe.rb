@@ -153,11 +153,12 @@ def play(board)
     end
       if winner(board)!=nil
         return over?(board)==true
+        play(board)
       end
       if won?(board)!=nil
       return over?(board)==true
+      play(board)
     end
-    else
       turn(board)
   end
 end
