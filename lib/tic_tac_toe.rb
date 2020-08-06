@@ -155,6 +155,6 @@ def play(board)
   end
 end
   if won?(board)!=nil && over?(board)
-    puts "Congratulations ${winner(board)}!"
+    puts 
   end
 end
