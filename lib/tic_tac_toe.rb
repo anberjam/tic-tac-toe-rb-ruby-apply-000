@@ -160,6 +160,7 @@ def play(board)
       play(board)
     else 
       turn(board)
+      won?(board)
     end
   end
   
