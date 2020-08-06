@@ -164,7 +164,7 @@ def play(board)
     end
   end
   
-if draw?(board)==nil
+if draw?(board)==true
   puts "Cat's Game!"
   elsif winner(board)=="X"
     puts "Congratulations X!"
