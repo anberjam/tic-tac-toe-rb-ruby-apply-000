@@ -150,8 +150,7 @@ def play(board)
       turn(board)
     if draw(board)==true
       return over?(board)==true
-    end
-    if won?(board)!=nil
+    elsif won?(board)!=nil
       return over?(board)==true
   end
 end
