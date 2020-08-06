@@ -147,7 +147,7 @@ end
 
 def play(board)
   until over?(board)==true
-    if draw?(board)==true || won?(board)!=nil
+    if draw?(board)==true || winner(board)!=nil
       return over?(board)==true
       play(board)
     else
