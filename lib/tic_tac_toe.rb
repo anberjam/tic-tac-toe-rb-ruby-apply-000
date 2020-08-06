@@ -150,14 +150,10 @@ def play(board)
     if draw?(board)==true
       return over?(board)==true
       play(board)
-    else
-      turn(board)
     end
       if winner(board)!=nil
         return over?(board)==true
         play(board)
-      else
-        turn(board)
       end
       if won?(board)!=nil
       return over?(board)==true
