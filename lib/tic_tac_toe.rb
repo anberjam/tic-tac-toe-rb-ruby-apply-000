@@ -154,7 +154,11 @@ def play(board)
       return over?(board)==true
   end
 end
-  if turn_count.even?==true && 
-    puts 
+if winner(board)==nil
+  puts "Cat's Game!"
+  elsif winner(board)=="X"
+    puts "Congratulations X!"
+  elsif winner(board)=="O"
+    puts "Congratulations O!"
   end
 end
