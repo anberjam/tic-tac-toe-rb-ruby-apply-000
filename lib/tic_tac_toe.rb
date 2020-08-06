@@ -42,7 +42,7 @@ end
 
 def valid_move? (board,index)
   if ((index>=0 && index<=8) && !position_taken?(board,index))
-    return TRUE
+    return true
   else 
     return false
 end 
@@ -164,7 +164,7 @@ def play(board)
     end
   end
   
-if winner(board)==nil
+if draw?(board)==nil
   puts "Cat's Game!"
   elsif winner(board)=="X"
     puts "Congratulations X!"
